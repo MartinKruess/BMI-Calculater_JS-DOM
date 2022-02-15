@@ -9,39 +9,51 @@
 }
 
 body{
-    /* background:url("./images/bg.jpeg") no-repeat center/cover; */
+    background:url("./images/bg.jpeg") no-repeat center/cover fixed;
+    color: #eee;
     width: 99vw;
     height: 95vh;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
+    font-weight: 600;
 }
 
 section
 {
+    background-color: #cccccc33;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 80%;
-    height: 95vh;
+    min-height: 95vh;
     margin: 2vh auto ;
     padding: 1%;
-    border: solid;
+    border-radius: 2rem;
 }
 
 #outputContainer
 {
     color: #ccc;
     width: 100%;
-    height: 45%;
+    height: 45vh;
     display: flex;
     flex-wrap: wrap;
     padding: 0.5rem;
+    border-radius: 2rem;
 }
 
 .changer
 {
+    display: flex;
+    align-items: center;
     width: 30%;
-    height: 45%;
+    height: 45vh;
+    margin: 1rem 0;
+}
+
+.changerBG{
+    background-color: #1d1d1d77;
+    border-radius: 2rem;
 }
 
 #loginPanel{
@@ -51,8 +63,8 @@ section
 img{
     width:100%;
     height: 70%;
-    margin-top: 15%;
     border: double 2px;
+    border-radius: 2rem;
 }
 
 .bmiScaleContainer{
@@ -87,7 +99,7 @@ img{
     max-height: 4.5rem;
     font-size: 2rem;
     padding: 1rem;
-    border: solid;
+    
 }
 
 #loginPanel
@@ -105,29 +117,50 @@ h2{
 }
 p{
     text-align: center;
-    font-size: 1rem;
+    font-size: clamp(1rem, 1.3rem, 1.6rem);
     padding: 0 0.5rem;
 }
 
 input
 {
     width: 90%;
-    height: 1.6rem;
+    height: 2.5rem;
     padding: 0 1rem;
+    border-radius: 1rem;
+}
+
+input:focus{
+    outline: none;
+    border-color:red;
 }
 
 button
 {
-    max-height: 2.5rem;
-    width: clamp(5rem, 25%, 15rem);
+    height: 2.5rem;
+    width: clamp(5rem, 35%, 15rem);
     font-size: 1rem;
+    font-weight: 600;
     padding: 0.1rem 1rem;
     border-radius: 0.7rem;
     margin-bottom: 0.5rem;
-    
 }
 
-@media only screen and (max-width: 636px){
+button:hover{
+    background-color: lightcoral;
+    color: #eee;
+}
+
+@media only screen and (max-width: 900px){
+    .secTop{
+        flex-direction: row;
+        height: auto;
+    }
+    .changer{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px){
     .secTop{
         flex-direction: column;
         height: auto;
