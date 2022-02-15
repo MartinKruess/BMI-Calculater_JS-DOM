@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section class="secTop">
+            <article class="changer">
+                <img src="" id="changer" alt="">
+            </article>
+            <article class="changer" id="loginPanel">
+                <h2>Login</h2>
+                <input type="text" id="login" placeholder="LoginName">
+                <input type="password" id="password" placeholder="Password">
+                <button type="submit" onclick="login()">Login</button>
+            </article>
+            <article class="changer" id="bmi">
+                <h2>BMI RECHNER</h2>
+                <p>
+                    Der BMI-Wert ist eine wichtige Hilfe für ein gesundes Leben. Jetzt schnell und unkompliziert Ihren Body-Mass-Index berechnen.
+                </p>
+                <input type="number" id="age" placeholder="Alter">
+                <input type="number" id="gewicht" placeholder="Gewicht in KG">
+                <input type="number" id="groesse" placeholder="Größe in cm">
+                <button onclick="bmiCalc()">BMI berechnen</button>
+            </article>
+            <article id="outputContainer">
+                <h2>Ihr BMI im Vergleich</h2>
+                <p id="bmiOutput">23,73</p>
+                <div class="bmiScaleContainer">
+                    <div id="bmiScale">23,73 BMI</div>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit id, aliquid nulla illo iusto minima! Culpa voluptate illo facilis harum, reprehenderit fugit eligendi deleniti dolor, minima labore quos ratione suscipit!
+                </p>
+            </article>
+        </section>
+        <section>
+            <div></div>
+        </section>
+    </main>
+    
+</body>
+</html>
